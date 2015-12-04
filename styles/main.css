@@ -22,7 +22,7 @@ md-content{
 }
 .thumbnail {
     position: relative;
-    width: 600px;
+    width: 100vw;
     height: 600px;
     overflow: hidden;
 }
@@ -30,8 +30,8 @@ md-content{
     position: absolute;
     left: 50%;
     top: 50%;
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
     -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
