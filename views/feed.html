@@ -1,0 +1,27 @@
+<md-content class="md-padding">
+    <md-card ng-repeat="item in items" >
+        <div style="width: 100%;" layout="row" layout-align="center center">
+            <div class="thumbnail"  >
+                <img ng-src="{{item.image}}" class="md-card-image " alt="Washed Out">
+            </div>
+        </div>
+
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">{{item.title}}</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+            <p>
+                {{item.info}}
+            </p>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+            <md-button>
+                <md-icon class="material-icons step">
+                    favorite
+                </md-icon>
+            </md-button>
+        </md-card-actions>
+    </md-card>
+</md-content>

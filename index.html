@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Height</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    <link rel='stylesheet prefetch'
+          href='https://cdn.gitcdn.xyz/cdn/angular/bower-material/v1.0.0-rc5/angular-material.css'>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+</head>
+
+<body ng-app="ShargilHomoApp" ng-controller="AppController">
+
+<div ng-cloak>
+    <md-content>
+        <md-tabs md-dynamic-height md-swipe-content md-stretch-tabs="auto">
+            <md-tab label="Feed">
+                <div ng-include="'views/feed.html'"></div>
+            </md-tab>
+            <md-tab label="Notifications">
+                <div ng-include="'views/notifications.html'"></div>
+            </md-tab>
+            <md-tab label="Stores">
+                <div ng-include="'views/stores.html'"></div>
+            </md-tab>
+        </md-tabs>
+    </md-content>
+</div>
+
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-aria.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-messages.min.js'></script>
+<script src='https://cdn.gitcdn.xyz/cdn/angular/bower-material/v1.0.0-rc5/angular-material.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/assets-cache.js'></script>
+<script src="scripts/js.js"></script>
+</body>
+</html>
