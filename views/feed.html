@@ -1,7 +1,7 @@
 <md-content class="md-padding">
-    <md-card ng-repeat="item in items" >
+    <md-card ng-repeat="item in items">
         <div style="width: 100%;" layout="row" layout-align="center center">
-            <div class="thumbnail"  >
+            <div class="thumbnail">
                 <img ng-src="{{item.image}}" class="md-card-image " alt="Washed Out">
             </div>
         </div>
@@ -17,8 +17,13 @@
             </p>
         </md-card-content>
         <md-card-actions layout="row" layout-align="end center">
-            <md-button>
-                <md-icon class="material-icons step">
+            <md-button class="md-icon-button" aria-label="Share">
+                <md-icon class="material-icons">
+                    share
+                </md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="Share">
+                <md-icon class="material-icons">
                     favorite
                 </md-icon>
             </md-button>

@@ -36,3 +36,7 @@ md-content{
     -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
 }
+.store{
+    height:100%;
+    max-width: 100%;
+}
