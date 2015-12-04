@@ -60,45 +60,35 @@ app.controller('AppController', function ($mdSidenav, $scope, $mdDialog, $mdBott
             store: 'GameStop '
         }
     ];
-});
-app.controller('gridListDemoCtrl', function ($scope) {
-    this.tiles = buildGridModel({
-        icon : "avatar:svg-",
-        title: "Store ",
-        background: ""
-    });
-    function buildGridModel(tileTmpl){
-        var it, results = [ ];
-        for (var j=0; j<11; j++) {
-            it = angular.extend({},tileTmpl);
-            it.icon  = it.icon + (j+1);
-            it.title = it.title + (j+1);
-            it.span  = { row : 1, col : 1 };
-            switch(j+1) {
-                case 1:
-                    it.background = "red";
-                    it.span.row = it.span.col = 2;
-                    break;
-                case 2: it.background = "green";         break;
-                case 3: it.background = "darkBlue";      break;
-                case 4:
-                    it.background = "blue";
-                    it.span.col = 2;
-                    break;
-                case 5:
-                    it.background = "yellow";
-                    it.span.row = it.span.col = 2;
-                    break;
-                case 6: it.background = "pink";          break;
-                case 7: it.background = "darkBlue";      break;
-                case 8: it.background = "purple";        break;
-                case 9: it.background = "deepBlue";      break;
-                case 10: it.background = "lightPurple";  break;
-                case 11: it.background = "yellow";       break;
-            }
-            results.push(it);
+    $scope.stores = [
+        {
+            icon: "http://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/0017/0103/brand.gif?itok=4RtFw22X",
+            store: 'DominosPizza'
+        },
+        {
+            icon: "http://dtkmen.com/wp-content/uploads/2015/05/zara-logo1.jpg",
+            store: 'ZARA'
+        },
+        {
+            icon: "http://file.answcdn.com/answ-cld/image/upload/v1/tk/brand_image/cd4fe6a0/14c2f8f0a580c4c93ec51864c5c108e420934096.png",
+            store: 'Best Buy'
+        },
+        {
+            icon: "https://img.grouponcdn.com/coupons/gVh4LbCsChC8hpw4xccVye/gamestop_com-500x500",
+            store: 'GameStop '
+        },
+        {
+            icon: "http://walmart.flyerify.com/uploads/companies/thumb/234/walmart.png",
+            store: "Walmart"
+        },
+        {
+            icon: "http://s1.reutersmedia.net/resources/r/?m=02&d=20130321&t=2&i=714807374&w=644&fh=&fw=&ll=&pl=&sq=&r=CBRE92K0KBA00",
+            store: "H&M"
+        },
+        {
+            icon:"http://www.7star.co.il/uploads/store_img_apMUrIrbjtBJpgIY.jpg",
+            store: "סופרפארם"
         }
-        return results;
-    }
 
+    ];
 });
